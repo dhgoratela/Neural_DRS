@@ -5,10 +5,10 @@ set -eu -o pipefail
 # Newer versions might work as well, not tested
 # All experiments are with the Torch version, which is no longer maintained
 # Though for reproducibility I still use it for these scripts
-git clone https://github.com/OpenNMT/OpenNMT/
-cd OpenNMT
-git checkout 2d9bc10
-cd ../
+#git clone https://github.com/OpenNMT/OpenNMT/
+#cd OpenNMT
+#git checkout 2d9bc10
+#cd ../
 
 # Get the DRS parsing repo with the scripts (Counter) and data
 git clone https://github.com/dhgoratela/DRS_parsing
@@ -64,12 +64,12 @@ printf "Please check: https://marian-nmt.github.io/docs/ if you have all depende
 sleep 5 # time to read the message
 
 # Download pretrained OpenNMT/Marian models and put them in a folder
-mkdir -p models/opennmt/
+#mkdir -p models/opennmt/
 mkdir -p models/marian/
 # Marian
 curl -o models/marian/best_gold_only.npz www.let.rug.nl/rikvannoord/DRS/IWCS/models/best_gold_only/model1.npz
 curl -o models/marian/best_gold_silver.npz www.let.rug.nl/rikvannoord/DRS/IWCS/models/best_gold_silver/model1.npz
 curl -o models/marian/baseline_gold_silver.npz www.let.rug.nl/rikvannoord/DRS/IWCS/models/baseline_gold_silver/model1.npz
 # OpenNMT
-curl -o models/opennmt/best_gold_only.npz www.let.rug.nl/rikvannoord/DRS/TACL/models/best_gold_only/gpu/model_run1.t7
-curl -o models/opennmt/best_gold_silver.npz www.let.rug.nl/rikvannoord/DRS/TACL/models/best_model/gpu/model_run1.t7
+#curl -o models/opennmt/best_gold_only.npz www.let.rug.nl/rikvannoord/DRS/TACL/models/best_gold_only/gpu/model_run1.t7
+#curl -o models/opennmt/best_gold_silver.npz www.let.rug.nl/rikvannoord/DRS/TACL/models/best_model/gpu/model_run1.t7
