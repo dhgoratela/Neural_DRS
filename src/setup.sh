@@ -57,7 +57,7 @@ git checkout b2a945c
 # Build
 mkdir build
 cd build
-cmake ..
+cmake .. -DCOMPILE_CUDA=off
 make -j
 cd ../../
 printf "Please check: https://marian-nmt.github.io/docs/ if you have all dependencies needed to run Marian\n\n"
