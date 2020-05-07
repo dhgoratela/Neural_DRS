@@ -3,6 +3,7 @@ yes | sudo apt install python3
 yes | sudo apt upgrade python3
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.6 1
 yes | sudo apt install python3-pip
+yes | sudo apt install python-pip
 yes | sudo apt-get install cmake git build-essential doxygen libgoogle-perftools-dev google-perftools libz-dev libboost-all-dev zlib1g-dev libprotobuf10 protobuf-compiler libprotobuf-dev openssl libssl-dev ant zip unzip
 wget https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS-2019.PUB
 sudo apt-key add GPG-PUB-KEY-INTEL-SW-PRODUCTS-2019.PUB
