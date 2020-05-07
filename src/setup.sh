@@ -11,11 +11,11 @@ git checkout 2d9bc10
 cd ../
 
 # Get the DRS parsing repo with the scripts (Counter) and data
-git clone https://github.com/RikVN/DRS_parsing
+git clone https://github.com/dhgoratela/DRS_parsing
 cd DRS_parsing
 git checkout v.2.2.0
 pip install -r requirements.txt
-pip install scipy==1.3.1
+pip install scipy==1.3.3
 
 # The files in the DRS_parsing repo only have gold and silver separately
 # Combine them to files with gold + silver to reproduce experiments
